@@ -297,3 +297,8 @@ h1 {
   color: #606ad1;
   transition: ease-out .5s;
 }
+
+/* Map */
+#map {
+  height: 100%;
+}
