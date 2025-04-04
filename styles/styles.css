@@ -317,3 +317,13 @@ height: 500px;
 background-color: #ccc;
 margin: 30px auto;
 }
+
+/* JS Image Slider */
+
+.slideshow-container img {
+  width: 100%;
+}
+
+.dot {
+  text-align: center;
+}
