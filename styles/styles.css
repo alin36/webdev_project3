@@ -25,7 +25,6 @@ main {
   position: sticky;
   top: 0;
   z-index: 2;
-  
 }
 
 #nav-bar ul li {
@@ -72,7 +71,6 @@ h1 {
 }
 
 /*Resume (Fixed-width)*/
-
 #res-sum {
   background-color: #e4e5f1;
   position: relative;
@@ -303,27 +301,119 @@ h1 {
   height: 100%;
 }
 
-#wrapper {
-width: 850px;
-height: 600px;
-background-color: #3c00;
-margin:0 auto;
-overflow: hidden;
-}
-
-#canvas {
-width: 700px;
-height: 500px;
-background-color: #ccc;
-margin: 30px auto;
-}
-
 /* JS Image Slider */
+.slideshow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .slideshow-container img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0 auto;
 }
 
 .dot {
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  margin: 0 4px;
+  border-radius: 50%;
+  background-color: #dad5d5;
+}
+
+.dot-container {
   text-align: center;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+.arrows {
+  text-align: center;
+  margin-top: 0;
+  font-size: 30px;
+}
+
+.prev,
+.next {
+  display: inline-block;
+  transition: transform ease 1s;
+}
+
+.prev:hover,
+.next:hover {
+  color: rgb(9, 151, 151);
+  transition: ease .3s;
+  transform: translateY(-5%);
+}
+
+@media (min-width: 345px) {
+  #wrapper {
+    width: 250px;
+    height: 200px;
+    background-color: #3c00;
+    margin: 3px auto;
+    overflow: hidden;
+    }
+    
+  #canvas {
+    width: 70px;
+    height: 50px;
+    background-color: #ccc;
+    margin: 3px auto;
+  }
+
+  .slide {
+      width: 250px;
+      height: 200px;
+  }    
+}
+
+@media (min-width: 650px) {
+  #wrapper {
+    width: 425px;
+    height: 300px;
+    background-color: #3c00;
+    margin: 15px auto;
+    overflow: hidden;
+  }
+    
+  #canvas {
+    width: 350px;
+    height: 250px;
+    background-color: #ccc;
+    margin: 15px auto;
+  }
+
+  .slide {
+    width: 425px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 930px) {
+  #wrapper {
+    width: 850px;
+    height: 600px;
+    background-color: #3c00;
+    margin: 30px auto;
+    overflow: hidden;
+  }
+    
+  #canvas {
+    width: 700px;
+    height: 500px;
+    background-color: #ccc;
+    margin: 30px auto;
+  }
+
+  .slide {
+    width: 850px;
+    height: 700px;
+  }
 }
