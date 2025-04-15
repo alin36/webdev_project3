@@ -88,4 +88,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-window.addEventListener('load', showSlides(1));
+window.onload("load", showSlides(1));
