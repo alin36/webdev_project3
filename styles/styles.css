@@ -370,6 +370,7 @@ h1 {
   .slide {
       width: 250px;
       height: 200px;
+      display: none;
   }    
 }
 
@@ -392,6 +393,7 @@ h1 {
   .slide {
     width: 425px;
     height: 300px;
+    display: none;
   }
 }
 
@@ -414,5 +416,6 @@ h1 {
   .slide {
     width: 850px;
     height: 700px;
+    display: none;
   }
 }
