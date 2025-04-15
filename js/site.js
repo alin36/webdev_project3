@@ -89,3 +89,7 @@ function showSlides(n) {
 window.onload = function() {
   showSlides(slideIndex);
 };
+
+function theme() {
+  document.body.classList.toggle("dark-mode");
+}
