@@ -1,11 +1,11 @@
-let map;
-
 async function initMap() {
-  const { Map } = await google.maps.importLibrary("maps");
-
-  map = new Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
+  const { Map, InfoWindow } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary(
+    "marker",
+  );
+  const map = new Map(document.getElementById("map"), {
+    zoom: 12,
+    center: { lat: 34, lng: -111 },
     zoomControl: true,
     mapTypeControl: true,
     scaleControl: true,
@@ -14,8 +14,7 @@ async function initMap() {
     fullscreenControl: true
   });
 }
-
-initMap();
+window.addEventListener('load', initMap);
 
 let slideIndex = 1;
 showSlides(slideIndex);
